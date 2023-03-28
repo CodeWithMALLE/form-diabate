@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #009688;
+            color: white;
+            position: relative;
+            font-size: 24px;
+        }
+        form{
+            box-shadow: 0 0 8px 2px black;
+            display: inline-block;
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 20px;
+        }
+        input{
+            width: 150px;
+            height: 20px;
+        }
+        label{
+            display: inline-block;
+            text-align: left;
+            width: 200px;
+        }
+        input[type="submit"]{
+            text-align: center;
+            border-radius: 8px;
+            border: 0;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .8);
+            color: white;
+            cursor: pointer;
+        }
+        p{
+            text-align: center;
+            font-size: 28px;
+        }
+        a{
+            font-size: 28px;
+            text-decoration: none;
+            width: 150px;
+            margin: auto;
+            text-align: center;
+            display: block;
+            color: #000e38;
+        }
+        @media only screen and (max-width: 768px) {
+            form{
+                box-shadow: 0 0 8px 2px black;
+                display: inline-block;
+
+                position: static;
+                top: 0;
+                left: 0;
+                
+                margin: 10px;
+                padding: 20px;
+                transform: translate(0);
+            }
+            input{
+                width: 200px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <p>Creat Account</p>
+
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter your name here" id="name"><br><br>
+
+        <label for="tel">Number</label>
+        <input type="tel" placeholder="Enter your number here" id="tel"><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter your email here" id="email"><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter your password here" id="password"><br><br>
+
+        <label for="password-ok">Confirm a password</label>
+        <input type="password" placeholder="Conform your password" id="password-ok"><br><br>
+
+        <input type="submit" value="Creat Account">
+
+        <p>Avez vous déjà un compte ?</p>
+        <a href="#">Login</a>
+        
+    </form>
+</body>
+</html>
